@@ -1,0 +1,85 @@
+/* 변수 */
+$font-stack: Arial, sans-serif;
+$background-light: #f4f4f4;
+$background-dark: #e2e2e2;
+$primary-color: #333;
+$hover-color: #555;
+$white: white;
+
+/* 기본 스타일 */
+body {
+  font-family: $font-stack;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: $primary-color;
+  color: $white;
+  padding: 10px 0;
+  text-align: center;
+
+  #menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    li {
+      display: inline;
+    }
+
+    a {
+      color: $white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 15px;
+
+      &:hover {
+        background-color: $hover-color;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+/* 섹션 스타일 */
+.section {
+  padding: 60px 20px;
+  margin: 20px 0;
+
+  &.about {
+    background-color: $background-light;
+  }
+
+  &.experience {
+    background-color: $background-dark;
+  }
+
+  &.education {
+    background-color: $background-light;
+  }
+
+  &.projects {
+    background-color: $background-dark;
+  }
+
+  &.skills {
+    background-color: $background-light;
+  }
+
+  &.contact {
+    background-color: $background-dark;
+  }
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  #menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
