@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+}
+header .nav {
+  margin-bottom: 10px;
+}
+header .nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+header .nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+header .nav ul li button.display {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+header .head img {
+  width: 80px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+header .head h1 {
+  color: #3498db;
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+section:last-child {
+  border-bottom: none;
+}
+section h2 {
+  color: #3498db;
+  margin-bottom: 15px;
+}
+section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+section ul li {
+  margin-bottom: 20px;
+}
+section ul li .title h3 {
+  color: #3498db;
+  margin: 0;
+}
+section ul li .sub-title em {
+  color: #555;
+  font-style: normal;
+}
+section ul li .list-content p, section ul li .list-content ul {
+  color: #333;
+}
+section ul li .list-content ul {
+  padding-left: 20px;
+}
+section ul li .list-image {
+  margin: 10px 0;
+  width: 25%;
+}
+section ul li .list-image a {
+  text-decoration: none;
+  color: inherit;
+}
+section ul li .list-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+ul.bio {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul.bio li {
+  margin-bottom: 10px;
+}
+ul.bio li a {
+  color: #3498db;
+  text-decoration: none;
+  font-size: 16px;
+}
+ul.bio li a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */

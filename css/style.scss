@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+// 전역 스타일
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// 헤더 스타일
+header {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+
+  .nav {
+    margin-bottom: 10px;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: inline-block;
+        margin-right: 10px;
+
+        button.display {
+          background-color: #3498db;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .head {
+    img {
+      width: 80px;
+      height: auto;
+      display: block;
+      margin: 0 auto 10px;
+    }
+
+    h1 {
+      color: #3498db;
+      margin: 0;
+    }
+  }
+}
+
+// 섹션 스타일
+section {
+  padding: 20px;
+  border-bottom: 1px solid #ddd; // 섹션 구분선
+
+  &:last-child {
+    border-bottom: none; // 마지막 섹션의 구분선 제거
+  }
+
+  h2 {
+    color: #3498db;
+    margin-bottom: 15px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 20px;
+
+      .title {
+        h3 {
+          color: #3498db;
+          margin: 0;
+        }
+      }
+
+      .sub-title {
+        em {
+          color: #555;
+          font-style: normal;
+        }
+      }
+
+      .list-content {
+        p, ul {
+          color: #333;
+        }
+
+        ul {
+          padding-left: 20px;
+        }
+      }
+
+      .list-image {
+        margin: 10px 0;
+        width: 25%;
+
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+
+        img {
+          max-width: 100%;
+          height: auto;
+          display: block;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+// Bio 리스트 스타일
+ul.bio {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    margin-bottom: 10px;
+
+    a {
+      color: #3498db;
+      text-decoration: none;
+      font-size: 16px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
