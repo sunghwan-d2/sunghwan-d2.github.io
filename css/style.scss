@@ -1,20 +1,24 @@
-@charset "UTF-8";
-
 // 전역 스타일
 body {
-  font-family: Arial, sans-serif;
+  font: inherit;
   color: #333;
   background-color: #fff;
   margin: 0;
   padding: 0;
+  transition: background-color 0.3s, color 0.3s; // 부드러운 전환 효과
+}
+
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
 }
 
 a {
   color: #3498db;
   text-decoration: none;
 
-  &:hover {
-    text-decoration: underline;
+  :hover {
+    text-decoration: none;
   }
 }
 
@@ -23,8 +27,24 @@ header {
   background-color: #f4f4f4;
   padding: 20px;
   text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+
+  &.dark-mode {
+    background-color: #222;
+    color: #fff;
+
+    .nav {
+      ul li button.display {
+        background-color: #555;
+      }
+    }
+  }
 
   .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
     margin-bottom: 10px;
 
     ul {
@@ -40,10 +60,14 @@ header {
           background-color: #3498db;
           color: white;
           border: none;
-          padding: 10px 20px;
-          border-radius: 5px;
+          padding: 5px 10px;
+          border-radius: 3rem;
           cursor: pointer;
-          font-size: 16px;
+          font-size: 10px;
+
+          &.dark-mode {
+            background-color: #555;
+          }
         }
       }
     }
@@ -58,8 +82,11 @@ header {
     }
 
     h1 {
-      color: #3498db;
       margin: 0;
+
+      &.dark-mode {
+        color: #fff; // 다크 모드에서 글씨 색상
+      }
     }
   }
 }
@@ -67,68 +94,82 @@ header {
 // 섹션 스타일
 section {
   padding: 20px;
-  border-bottom: 1px solid #ddd; // 섹션 구분선
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
 
-  &:last-child {
-    border-bottom: none; // 마지막 섹션의 구분선 제거
+  .title {
+    margin-bottom: 20px;
+
+    h2 {
+      font-size: 24px;
+    }
   }
 
-  h2 {
-    color: #3498db;
-    margin-bottom: 15px;
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .description {
+      flex: 1; // description이 가능한 많은 공간을 차지하도록 설정
+      margin-right: 1px; // description과 image 사이의 간격 설정
+    }
+
+    .description p {
+      margin: 0;
+      line-height: 2.5; // line-height를 적절히 설정하여 읽기 좋게
+    }
+
+    .image-container {
+      flex: 0 0 300px; // 이미지 크기를 고정하고, 이미지 컨테이너는 300px로 설정
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .image {
+        width: 100%;
+        height: auto; // 이미지 비율 유지
+        border-radius: 50%;
+        object-fit: cover; // 이미지 비율을 유지하면서 크기 맞추기
+      }
+    }
   }
 
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  .bio {
+    margin-top: 20px; // content와 bio 사이의 간격 설정
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
-    li {
-      margin-bottom: 20px;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
 
-      .title {
-        h3 {
-          color: #3498db;
-          margin: 0;
-        }
-      }
-
-      .sub-title {
-        em {
-          color: #555;
-          font-style: normal;
-        }
-      }
-
-      .list-content {
-        p, ul {
-          color: #333;
-        }
-
-        ul {
-          padding-left: 20px;
-        }
-      }
-
-      .list-image {
-        margin: 10px 0;
-        width: 25%;
+      li {
+        margin-bottom: 10px;
 
         a {
           text-decoration: none;
-          color: inherit;
-        }
+          color: #007bff;
+          font-size: 16px;
 
-        img {
-          max-width: 100%;
-          height: auto;
-          display: block;
-          margin-bottom: 10px;
+          &:hover {
+            text-decoration: underline;
+          }
+
+          &.email {
+            font-size: 14px;
+          }
         }
       }
     }
   }
 }
+
+
+
 
 // Bio 리스트 스타일
 ul.bio {
@@ -144,8 +185,12 @@ ul.bio {
       text-decoration: none;
       font-size: 16px;
 
-      &:hover {
-        text-decoration: underline;
+      :hover {
+        text-decoration: none;
+      }
+
+      &.dark-mode {
+        color: #9b59b6; // 다크 모드에서 링크 색상
       }
     }
   }
