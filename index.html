@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>김성환 기술 이력서</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
     <script defer type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
@@ -14,7 +14,7 @@
     <nav class="nav">
         <ul>
             <li>
-                <button class="display">DARK</button>
+                <button class="display" id="toggleTheme">DARK</button>
             </li>
         </ul>
     </nav>
@@ -24,147 +24,125 @@
     </div>
 </header>
 <section class="aboutMe">
-    <div class="content">
+    <div class="title">
         <h2>안녕하세요, 개발자 김성환이라고 합니다.</h2>
-        <p>"생각을 행동으로 옮기는 용기, 그리고 끈기가 곧 실력이라는 믿음을 가지고 있는 신입 개발자입니다.
-        <p> 단순한 아이디어에 머물지 않고, 실제로 구현해내는 과정에서 큰 성취감을 느낍니다.</p>
-        <p> 개발은 제게 끊임없는 도전의 연속이지만, 그 과정에서 배우고 성장하는 즐거움이 더욱 큽니다.</p>
-        <p> 문제를 해결할 때마다 더 나은 방법을 고민하고, 실패를 두려워하지 않고 끈기 있게 도전하는 자세를 유지해왔습니다.</p>
-        <p> 비록 신입이지만, 그런 끈기와 열정을 바탕으로 빠르게 성장하며 팀에 기여할 자신이 있습니다.</p>
-        <p> 저의 작은 시작이 큰 성과로 이어질 수 있도록 최선을 다하겠습니다.</p>
-        <ul class="bio">
-            <li>
-                <a href="http://www.gmail.com">ghktkf789@gmail.com</a>
-            </li>
-            <li>
-                <a href="https://velog.io/@sunghwan">Blog</a>
-            </li>
-            <li>
-                <a href="https://github.com/sunghwan-d2">Github</a>
-            </li>
+    </div>
+    <div class="content">
+        <div class="description">
+            <p>"생각을 행동으로 옮기는 용기, 그리고 끈기가 곧 실력이라는 믿음을 가지고 있는 신입 개발자입니다.</p>
+            <p>단순한 아이디어에 머물지 않고, 실제로 구현해내는 과정에서 큰 성취감을 느낍니다.</p>
+            <p><strong> 개발은 제게 끊임없는 도전의 연속이지만, 그 과정에서 배우고 성장하는 즐거움이 더욱 큽니다.</strong></p>
+            <p>문제를 해결할 때마다 더 나은 방법을 고민하고, 실패를 두려워하지 않고 끈기 있게 도전하는 자세를 유지해왔습니다.</p>
+            <p>비록 신입이지만, 그런 끈기와 열정을 바탕으로 빠르게 성장하며 팀에 기여할 자신이 있습니다.</p>
+            <p>저의 작은 시작이 큰 성과로 이어질 수 있도록 최선을 다하겠습니다.</p>
+
+        </div>
+        <div class="image-container">
+            <img class="image" src="images/일상사진2.png" alt="일상사진">
+        </div>
+    </div>
+    <div class="bio">
+        <ul>
+            <li><a href="http://www.gmail.com">📧 ghktkf789@gmail.com</a></li>
+            <li><a href="https://velog.io/@sunghwan">✅ Blog</a></li>
+            <li><a href="https://github.com/sunghwan-d2">💻 Github</a></li>
         </ul>
     </div>
 </section>
+
+
 <section class="education">
-    <h2>학력과 교육이력</h2>
+    <div class="title">
+        <h2>학력과 교육이력</h2>
+    </div>
     <ul>
         <li>
-            <div class="title">
-                <h3>대구가톨릭대학교 컴퓨터공학과 졸업</h3>
-            </div>
             <div class="sub-title">
-                <em>(Mar 2016 - Aug 2021) </em>
+                <h3>대구가톨릭대학교 컴퓨터공학과 졸업</h3>
+                <em>(Mar 2016 - Aug 2021)</em>
             </div>
-            <div class="list-content">
-                <p>~~~~~~~~~</p>
+            <div class="description">
+                <p>동해물과백두산이마르고닳도록 하느님이보우하사 우리나라만세</p>
             </div>
         </li>
         <li>
-            <div class="title">
-                <h3>코리아IT아카데미 대구점</h3>
-            </div>
             <div class="sub-title">
-                <em>(Dec 2023 - Aug 2024) </em>
+                <h3>코리아IT아카데미 대구점</h3>
+                <em>(Dec 2023 - Aug 2024)</em>
             </div>
-            <div class="list-content">
+            <div class="description">
                 <p>~~~~~~~~~</p>
             </div>
         </li>
     </ul>
 </section>
 <section class="skills">
-    <h2>보유 스킬</h2>
+    <div class="title">
+        <h2>보유 스킬</h2>
+    </div>
     <ul>
         <li>
-            <div class="title">
+            <div class="sub-title">
                 <h3>Backend</h3>
             </div>
-            <div class="list-content">
+            <div class="description">
                 <ul>
-                    <li>
-                        <p>Java</p>
-                    </li>
-                    <li>
-                        <p>Spring</p>
-                    </li>
-                    <li>
-                        <p>Spring MVC</p>
-                    </li>
-                    <li>
-                        <p>Spring Boot</p>
-                    </li>
-                    <li>
-                        <p>MariaDB/MySQL</p>
-                    </li>
-                    <li>
-                        <p>Mybatis</p>
-                    </li>
+                    <li><p>Java</p></li>
+                    <li><p>Spring</p></li>
+                    <li><p>Spring MVC</p></li>
+                    <li><p>Spring Boot</p></li>
+                    <li><p>MariaDB/MySQL</p></li>
+                    <li><p>Mybatis</p></li>
                 </ul>
             </div>
         </li>
-
         <li>
-            <div class="title">
+            <div class="sub-title">
                 <h3>Frontend</h3>
             </div>
-            <div class="list-content">
+            <div class="description">
                 <ul>
-                    <li>
-                        <p>HTML5,CSS3,Scss</p>
-                    </li>
-                    <li>
-                        <p>JavaScript (ES6+)</p>
-                    </li>
-
+                    <li><p>HTML5, CSS3, Scss</p></li>
+                    <li><p>JavaScript (ES6+)</p></li>
                 </ul>
             </div>
         </li>
-
         <li>
-            <div class="title">
+            <div class="sub-title">
                 <h3>Tools</h3>
             </div>
-            <div class="list-content">
+            <div class="description">
                 <ul>
-                    <li>
-                        <p>Git, GitHub</p>
-                    </li>
-                    <li>
-                        <p>IntelliJ IDEA</p>
-                    </li>
-                    <li>
-                        <p>VSCode</p>
-                    </li>
-                    <li>
-                        <p>Eclipse</p>
-                    </li>
-
+                    <li><p>Git, GitHub</p></li>
+                    <li><p>IntelliJ IDEA</p></li>
+                    <li><p>VSCode</p></li>
+                    <li><p>Eclipse</p></li>
                 </ul>
             </div>
         </li>
     </ul>
 </section>
-<section class="projects">
-    <h2>프로젝트</h2>
+<section class="project">
+    <div class="title">
+        <h2>프로젝트</h2>
+    </div>
     <ul>
         <li>
-            <div class="title">
-                <h3>SoundStory</h3>
+            <div class="sub-title">
+                <h3 style="color: #3498db">SoundStory</h3>
+                <em>(May 2024) ~ (Jul 2024)</em>
             </div>
-            <div class="list-image">
-                <a href="http://www.kshh.kr">
-                    <img src="images/soundstory.png" alt="soundstory 이미지" style="width: 100%; height: 10%">
-                    <img src="images/screenshot.jpeg" alt="soundstory 캡쳐사진" style="width: 100%; height: 10%">
-                </a>
+            <div class="description">
+                <p>사용자에게 개인별로 맞춤 플레이리스트를 제공하고 추가한 노래들을 바탕으로 음악을 스트리밍할 수 있는 서비스입니다.</p>
+                <p>Youtube API를 통해 음악을 감상할 수 있으며 각 아티스트별로 댓글 폼을 만들어 유저들 간 커뮤니케이션이 원활히 이루어지도록 하였습니다.</p>
+                <p>또한, 검색 기능을 추가하여 음악 및 아티스트를 손쉽게 정보 찾기를 할 수 있도록 만들었습니다.</p>
             </div>
-            <div class="list-content">
-                <p>사용자에게 개인별로 맞춤 플레이리스트를 제공하고 추가한 노래들을 바탕으로 음악을 스트리밍할 수 있는 시스템입니다.</p>
-                <p>Youtube API를 통해 음악을 감상 할 수 있으며 각 아티스트별로 댓글 폼을 만들어 유저들간 커뮤니케이션이 원활히 이뤄지도록 이뤄지도록 하였습니다. </p>
-                <p>또한, 검색기능을 추가하여 음악 및 아티스트를 손쉽게 정보찾기를 할 수 있도록 만들었습니다.</p>
+            <div class="image">
+                <img style="width: 30%" src="images/soundstory.png" alt="SoundStory 로고">
+                <img style="width: 30%" src="images/screenshot.jpeg" alt="SoundStory 스크린샷">
             </div>
         </li>
     </ul>
 </section>
 </body>
 </html>
-
